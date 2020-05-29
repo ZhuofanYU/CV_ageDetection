@@ -7,7 +7,7 @@
 1. Download this Github folder.
 1. Download the zip containing the data from this Google Drive link: (https://drive.google.com/drive/folders/1MBKQxv3_DbxBzyM_jMW3yEwf60N-5m05?usp=sharing)
 1. Unzip the folder named **Dataset** and put in your local Github repository you downloaded in the first step.
-1. Run the below python files that you would like to analyze.
+1. Execute PCA.py and wait for the answer(~15 min for the whole process). You can also run the below python files that you would like to analyze.
 
 
 ## **Executed python files:**
