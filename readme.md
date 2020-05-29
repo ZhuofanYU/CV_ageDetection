@@ -16,7 +16,7 @@
 * **final_segmentation_method.py**: Our final segmentation method and avg cell size calculation. It has the same structure as cell_counting.py, plots will show the different steps of segmentation and cell size estimation.  
 * **cell_segmentation_Abdolhosseini_et_al.py**: Similar to final_segmentation_method.py but with Abdolhosseini et al's method. 
 * **stats<span></span>.py**: statistics on the cell count and cell size per stage. Executing it will give the distribution of these features accross all images, as well as aggregates per stage. 
-* **imageAlignment<span></span>.py**: image alignment 
+* **imageAlignment<span></span>.py**: align images according to the standard shape
 
 ## **Support python files**
 These python files are meant to be imported by the executed python files. 
