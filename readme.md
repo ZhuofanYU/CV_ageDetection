@@ -7,11 +7,16 @@
 1. Download this Github folder.
 1. Download the zip containing the data from this Google Drive link: (https://drive.google.com/file/d/12s9NyoeqFkfLo755-Qdh0RGFtWLMjzCN/view?usp=sharing)
 1. Put the **Dataset** folder contained in the zip file inside the Github folder downloaded in **step 1**.
-1. Install the requirement if you do not meet them by running the following in **anaconda prompt** or elsewhere:
+1. Then run the below python files that you would like to analyze.
+
+1. **If you don't have an updated version of skimage** you might not be able to run **cell_segmentation_Abdolhosseini_et_al.py**. If you would like to update skimage, here is a list of instructions to do so, since you might encounter some problems by trying to update skimage directly. The following work around is to uninstall then reinstall skimage. 
     ```
+    conda uninstall scikit-image
+    
+    conda install -c conda-forge scikit-image
+    
     pip install -r requirements.txt --no-index --find-links file:///tmp/packages
     ```
-1. Then run the below python files that you would like to analyze.
 
 ## **Python files:**
 
