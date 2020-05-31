@@ -220,7 +220,23 @@ def getConfusion(x,y,num = 1):
             M += confusion_matrix(y_test,y_pred) 
     #print(classification_report(y_test,y_pred))
     return M
+
+
+ 
+def mkdir(path):
+	folder = os.path.exists(path)
+	if not folder:                
+		os.makedirs(path)          
+
+		
+         
+
 def initialization():
+    mkdir(".\\Embryos")    
+    mkdir(".\\GeneExpression")    
+    mkdir(".\\Rectangles")    
+    mkdir(".\\Results")    
+    mkdir(".\\ResultsEmbryos")        
     print("##############Start pre-process############")
     preprocessImages()
     print("##############Finish pre-process############")
