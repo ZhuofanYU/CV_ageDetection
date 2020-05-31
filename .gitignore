@@ -1,7 +1,6 @@
-Dataset/
-Embryos/
-GeneExpression/
-Results/
-ResultsEmbryos/
-Rectangles/
-__pycache__/
+Dataset/*
+Embryos/*
+GeneExpression/*
+Results/*
+ResultsEmbryos/*
+Rectangles/*
