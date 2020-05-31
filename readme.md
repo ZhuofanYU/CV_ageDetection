@@ -7,20 +7,17 @@
 1. Download this Github folder.
 1. Download the zip containing the data from this Google Drive link: (https://drive.google.com/drive/folders/1MBKQxv3_DbxBzyM_jMW3yEwf60N-5m05?usp=sharing)
 1. Unzip the folder named **Dataset** and put in your local Github repository you downloaded in the first step.
-1. Execute PCA<span></span>.py and wait for the answer(~15 min for the whole process). Run the below python files that you would like to analyze.
+1. Run the below python files that you would like to analyze.
 
 
 ## **Python files:**
 
+* **PCA<span></span>.py:** Execute and wait for the answer(~15 min for the whole process). This will run the different feature exctraction scripts listed below, including the PCA/ICA and the SVM classifier and its results. 
 * **cell_counting.py**: Cell counting module, you can choose the file you want to execute at the beginning of the script. The script will plot the different steps of the cell counting. 
 * **final_segmentation_method.py**: Our final segmentation method and avg cell size calculation. It has the same structure as cell_counting.py, plots will show the different steps of segmentation and cell size estimation.  
 * **cell_segmentation_Abdolhosseini_et_al.py**: Similar to final_segmentation_method.py but with Abdolhosseini et al's method. 
 * **stats<span></span>.py**: statistics on the cell count and cell size per stage. Executing it will give the distribution of these features accross all images, as well as aggregates per stage. 
 * **imageAlignment<span></span>.py**: align images according to the standard shape
-
-Other python files are meant to be imported by the above ones. 
-## **Support python files**
-These python files are meant to be imported by the executed python files. 
 
 ## **Other files and folders:**
 
