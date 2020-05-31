@@ -11,6 +11,12 @@ import scipy.stats
 
 '''Example images used in the report'''
 
+#filename = './Dataset/S07-33-MAX_Dm-Kr walking No 182 - NC14.lif - overview.tif'
+filename = './Dataset/S04-04-MAX_Dm-Kr length No 193.lif - overview.tif'
+#filename = './Dataset/S05-05-MAX_Dm-Kr mRNA B2 B3 seperate probes 3h Amp.lif - overview.tif'
+#filename = './Dataset/S06-06-MAX_Dm-Kr mRNA B2 B3 seperate probes ON Amp.lif - overview.tif'
+#filename = './Dataset/S01-34-MAX_Dm-Kr walking No 182.lif - overview embryo1.tif'
+
 
 def calculate_average_size(filename, plot_steps=False, n_image=200, m_image=400, n_counting=100, m_counting=100):
     '''Segmentation et computation of average size of a cell using the segmentation and the cell counting
@@ -251,7 +257,7 @@ def calculate_average_size(filename, plot_steps=False, n_image=200, m_image=400,
     print('number of cells', num_cells)
 
     avg_size = total_cell_area / num_cells
-    print('average size', avg_size)
+    print('average size', avg_size + ' pixels')
 
     return(avg_size)
 

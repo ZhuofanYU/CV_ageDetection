@@ -109,8 +109,9 @@ def cell_counter(filename, plot=False, n=100, m=100):
         plt.show()
 
     num_cells, labels_im = cv2.connectedComponents(img, connectivity=4)
-    print('There are ' + str(num_cells - 1) +
-          ' cells in an area of ' + str(2 * n * 2 * m) + ' pixels')
+    if plot:
+        print('There are ' + str(num_cells - 1) +
+              ' cells in an area of ' + str(2 * n * 2 * m) + ' pixels')
 
     def imshow_components(labels):
         # Map component labels to hue val

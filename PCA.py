@@ -21,7 +21,6 @@ def load_image(filename,layer=0):
     """returns the image in the filename from the dataset"""
     img = cv2.imreadmulti(filename)
     img = img[1][0]
-    #plt.imshow(img)
     return img
 
 def threshold_img(M):
@@ -32,7 +31,6 @@ def load_image_processed(filename):
     """returns the image in the filename from the dataset"""
     img = cv2.imreadmulti(filename)
     img = img[1][0]
-    #plt.imshow(img)
     return img
 
 def img2dim1(img):
@@ -57,10 +55,8 @@ def construct_matrix(filenames:list):
 
 def construct_matrix_geneexpression(filenames:list):
     filepath = "./GeneExpression/"
-    #clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8,8))
     for i,filename in enumerate(filenames):
         img = load_image_processed(filepath+filename)  
-        #img = clahe.apply(img)
         img = img2dim1(img)
         if i == 0:
             D = img
@@ -95,13 +91,7 @@ def getEigenEmbryos(D,threshold_ratio=1.0):
             break
     return [embryos,ratios]
 
-"""def getLGEs(X):
-    ica = FastICA()
-    X_transpose = X.T
-    u = ica.fit_transform(X_transpose)
-    u = u.T
-    return u"""
-    
+
 def getLGEs(X):
     ica = FastICA()
     X_transpose = X.T
@@ -186,19 +176,8 @@ def loadFeatures():
     I_lge = I_lge.T    # each row is feature vector of an image 
     
     savepath = "./ResultsEmbryos/"
-    #D = loadD(savepath)
-    #S = loadS(savepath)
-    #X = loadX(savepath)
-    #I = np.dot(S,D)
-    #I = np.dot(X,D)
-    #I = unifyMatrix(I)
-    #I = I.T
-    #print(I_lge.shape)
-    #I_lge = np.concatenate((I_lge,I),axis=1)
-    #print(I_lge.shape)
-    #print(cellnum.shape)
+
     I_lge = np.concatenate((I_lge,cellnum),axis=1)
-    #I_lge = np.concatenate((I_lge,cellsize),axis=1)
     I_lge = np.concatenate((I_lge,labels),axis=1)
     I_lge = pd.DataFrame(I_lge)
     last = (I_lge.shape)[1]-1
