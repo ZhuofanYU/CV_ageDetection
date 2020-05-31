@@ -18,6 +18,7 @@ from imageAlignment import preprocessImages
 from final_segmentation_method import calculate_average_size
 
 
+
 def load_image(filename, layer=0):
     """returns the image in the filename from the dataset"""
     img = cv2.imreadmulti(filename)
@@ -274,6 +275,7 @@ def getPrecentage(M):
 
 if __name__ == "__main__":
     initialization()
+    np.random.seed(1)
     x, y = loadFeatures()
     M = getConfusion(x, y, num=300)
     A = getPrecentage(M)
