@@ -1,6 +1,6 @@
-Dataset/
-Embryos/
-GeneExpression/
-Results/
-ResultsEmbryos/
-Rectangles/
+Dataset/*
+Embryos/*
+GeneExpression/*
+Results/*
+ResultsEmbryos/*
+Rectangles/*
