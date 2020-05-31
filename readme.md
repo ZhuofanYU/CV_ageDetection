@@ -9,7 +9,7 @@ The following is information describing the content of the project and how to ru
 1. Put the **Dataset** folder contained in the zip file inside the Github folder downloaded in **step 1**.
 1. Then run the below python files that you would like to analyze.
 
-1. **If you don't have an updated version of skimage** you might not be able to run **cell_segmentation_Abdolhosseini_et_al.py**. If you would like to update skimage, here is a list of instructions to do so, since you might encounter some problems by trying to update skimage directly. The following work around is to uninstall then reinstall skimage. 
+1. **(Optional) If you don't have an updated version of skimage** you might not be able to run **cell_segmentation_Abdolhosseini_et_al.py**. If you would like to update skimage, here is a list of instructions to do so, since you might encounter some problems by trying to update skimage directly. The following work around is to uninstall then reinstall skimage. 
     ```
     conda uninstall scikit-image
     
