@@ -55,9 +55,14 @@ for i in range(1, len(stage_list)):
     if stage_list[i] != stage_list[i - 1]:
         stages_changes.append(i)
 
-df.groupby('stage').cell_count.mean()
+d_count = df.groupby(['stage'], as_index = False).cell_count.mean()
 #
-d = df.groupby('stage').cell_size.mean()
+d_size = df.groupby(['stage'], as_index = False).cell_size.mean()
+
+print('\n Count size stats \n')
+print(d_count)
+print('\n Cell size stats \n')
+print(d_size)
 
 for change in stages_changes:
     plt.axvline(x=change, color='r', linestyle='--')
@@ -70,4 +75,7 @@ for change in stages_changes:
 plt.title('Cell size distribution')
 plt.plot(df.cell_size)
 plt.show()
+
+
+print(d_count)
 

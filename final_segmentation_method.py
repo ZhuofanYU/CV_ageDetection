@@ -199,7 +199,8 @@ def calculate_average_size(filename, plot_steps=False, n_image=200, m_image=400,
         plot(G_post, 100, 100, title='Removing border components')
 
     total_cell_area = np.count_nonzero(G_post)
-    print('total cell area', total_cell_area)
+    if plot_steps:
+        print('total cell area', total_cell_area)
 
     '''counting cells '''
     sure_bg = G_post.copy()
@@ -253,11 +254,13 @@ def calculate_average_size(filename, plot_steps=False, n_image=200, m_image=400,
             num_cells -= 1
 
     num_cells = num_cells - 1
-
-    print('number of cells', num_cells)
+    
+    if plot_steps:
+        print('number of cells', num_cells)
 
     avg_size = total_cell_area / num_cells
-    print('average size', str(avg_size) + ' pixels')
+    if plot_steps:
+        print('average size', str(avg_size) + ' pixels')
 
     return(avg_size)
 
