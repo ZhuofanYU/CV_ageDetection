@@ -6,7 +6,7 @@
 
 1. Download this Github folder.
 1. Download the zip containing the data from this Google Drive link: (https://drive.google.com/drive/folders/1MBKQxv3_DbxBzyM_jMW3yEwf60N-5m05?usp=sharing)
-1. Unzip the folder named **Dataset** and put in your local Github repository you downloaded in the first step.
+1. Put the zip file inside your local Github folder you downloaded in **step 1**, right click on it and choose **extract here**.
 1. Run the below python files that you would like to analyze.
 
 
