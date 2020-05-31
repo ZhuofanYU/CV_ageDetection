@@ -1,7 +1,6 @@
 # **Readme**
 
 ## The following is information describing the content of the project and how to run the code. 
-
 ## **How to run the files?**
 
 1. Download this Github folder.
