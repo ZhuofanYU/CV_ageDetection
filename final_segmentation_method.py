@@ -257,7 +257,7 @@ def calculate_average_size(filename, plot_steps=False, n_image=200, m_image=400,
     print('number of cells', num_cells)
 
     avg_size = total_cell_area / num_cells
-    print('average size', avg_size + ' pixels')
+    print('average size', str(avg_size) + ' pixels')
 
     return(avg_size)
 

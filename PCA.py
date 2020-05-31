@@ -250,7 +250,6 @@ def initialization():
     X = components[0]
     X = np.array(X)
     S = getLGEs(X)
-    #S = threshold_img(S)
     saveMatrix(savepath, D, X, S)
     print("##############Finish processing gene expression############")
     print("##############Start processing embryos############")
@@ -262,7 +261,6 @@ def initialization():
     X = components[0]
     X = np.array(X)
     S = getLGEs(X)
-    #S = threshold_img(S)
     saveMatrix(savepath, D, X, S)
     print("##############Finish processing embryos############")
 
