@@ -7,8 +7,11 @@
 1. Download this Github folder.
 1. Download the zip containing the data from this Google Drive link: (https://drive.google.com/file/d/12s9NyoeqFkfLo755-Qdh0RGFtWLMjzCN/view?usp=sharing)
 1. Put the **Dataset** folder contained in the zip file inside the Github folder downloaded in **step 1**.
-1. Run the below python files that you would like to analyze.
-
+1. Install the requirement if you do not meet them by running the following in **anaconda prompt** or elsewhere:
+    ```
+    pip install -r requirements.txt --no-index --find-links file:///tmp/packages
+    ```
+1. Then run the below python files that you would like to analyze.
 
 ## **Python files:**
 
