@@ -1,4 +1,4 @@
-# **Readme**
+# **Image segmentation of fly embryos**
 
 The following is information describing the content of the project and how to run the code. 
 
